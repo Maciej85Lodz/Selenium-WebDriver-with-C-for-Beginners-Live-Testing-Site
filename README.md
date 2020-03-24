@@ -13,7 +13,7 @@ Selenium Webdriver is a free automation testing tool for web applications. It is
 
 
 #### In this Repository:
-I would like to focus on Graphic User Interface and Functionality Testing and we will learn how to work with the various element selectors and special elements like:
+I would like to focus on Graphic User Interface and Functionality Testing and I will learn how to work with the various element selectors and special elements like:
 
 ID, Name, CSS, Xpath and Class Selectors
 
@@ -21,29 +21,19 @@ Textbox, Check box, Radio buttons, Drop down Menus
 
 JavaScript Alert Boxes
 
-We will also have a few theory lectures about Selenium and testing in general in which I will explain:
+Then I would like to start creating our Automation Framework with Selenium! When I learn how to create a Framework, I hope that I will be able to write correct Selenium WebDriver tests!
 
-When you should use either of these selectors;
-
-What is a Test Case/Scenario
-
-How you can use Mindmaps in testing
-
-Then we will start creating our Automation Framework with Selenium! When you learn how to create a Framework by the end of the course, you will be able to write your Selenium WebDriver tests in Plain English!
-
-This course also includes lectures on:
+This Repository should also includes:
 
 Running Tests on Mobile Devices with Selenium and Appium
 
 Parallel Testing with Selenium and NUnit3 (running multiple tests at the same time)
 
-Generating beautiful HTML Reports for our Test Results with Selenium and NUnit3
+Generating beautiful HTML Reports for the Test Results with Selenium and NUnit3
 
 Using Different Browsers - Chrome, Opera, Internet Explorer, Firefox
 
 Taking Screenshots with Selenium
-
-Using PhantomJS Driver and Selenium (we have a project here to download all posts from a website!)
 
 Working with Element Properties (Size, Location, Stylings, e.g. change colors or make elements disappear)
 
