@@ -8,7 +8,7 @@ class EntryPoint
     {
         string url = "http://testing.todvachev.com/selectors/css-path/";
         string cssPath = "#post-108 > div > figure > img";
-        string xPath = "//*[@id=\"post - 108\"]/div/figure/img";
+        string xPath = "//*[@id=\"post-108\"]/div/figure/img";
 
         IWebDriver driver = new ChromeDriver();
 
@@ -41,6 +41,7 @@ class EntryPoint
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(message);
+        Console.ReadKey();
         Console.ForegroundColor = ConsoleColor.White;
     }
 
@@ -48,6 +49,7 @@ class EntryPoint
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(message);
+        Console.ReadKey();
         Console.ForegroundColor = ConsoleColor.White;
     }
 }
