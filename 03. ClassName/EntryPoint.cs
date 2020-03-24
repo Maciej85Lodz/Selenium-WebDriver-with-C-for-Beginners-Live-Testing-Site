@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 
 class EntryPoint
 {
-    static void Main(string[] args)
+    static void Main()
     {
         string url = "http://testing.todvachev.com/selectors/class-name/";
         string className = "testClass";

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ID Selector", "01.ID Sel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ClassName", "03. ClassName\03. ClassName.csproj", "{FC36E8FF-0ECC-43D8-A0C1-3A1B3017FF3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CSS Path", "04.CSS Path\04.CSS Path.csproj", "{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FC36E8FF-0ECC-43D8-A0C1-3A1B3017FF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC36E8FF-0ECC-43D8-A0C1-3A1B3017FF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC36E8FF-0ECC-43D8-A0C1-3A1B3017FF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
