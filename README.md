@@ -5,7 +5,7 @@
 ### About this repository
 I present my progress in learning of Selenium using C# for automation test.
 #### What is Selenium?
-Selenium is the most popular tool to test websites! Join me and hundreds of students to learn Selenium Webdriver!
+Selenium is the most popular tool to test websites! Join me and learn Selenium Webdriver!
 
 
 #### Description
