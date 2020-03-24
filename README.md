@@ -9,7 +9,7 @@ Selenium is the most popular tool to test websites! Join me and hundreds of stud
 
 
 #### Description
-Selenium Webdriver is a free automation testing tool for web applications. It is able to work with different browsers like Chrome, Firefox, IE, Opera and simulate human like behavior. Selenium is able to interact with all the different elements in a webpage. It can click on them, input text, extract text and much more. By covering all the different functionalities on your website with Selenium tests, you will be able to quickly catch new and reappearing old bugs. This will save your team time and money.
+Selenium Webdriver is a free automation testing tool for web applications. It is able to work with different browsers like Chrome, Firefox, IE, Opera and simulate human like behavior. Selenium is able to interact with all the different elements in a webpage. It can click on them, input text, extract text and much more. By covering all the different functionalities on the website with Selenium tests, I want to show how quickly catch new and reappearing old bugs. This will save your team time and money.
 
 
 #### In this Repository:
