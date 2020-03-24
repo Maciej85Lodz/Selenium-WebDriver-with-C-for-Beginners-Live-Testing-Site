@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ClassName", "03. ClassN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CSS Path", "04.CSS Path\04.CSS Path.csproj", "{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. NoSuchElementException", "05. NoSuchElementException\05. NoSuchElementException.csproj", "{9492C4FB-3F72-428C-B723-18DB080296B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B12A13FB-F8C6-46CE-BEF1-C4C429C1D6C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9492C4FB-3F72-428C-B723-18DB080296B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9492C4FB-3F72-428C-B723-18DB080296B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9492C4FB-3F72-428C-B723-18DB080296B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9492C4FB-3F72-428C-B723-18DB080296B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
