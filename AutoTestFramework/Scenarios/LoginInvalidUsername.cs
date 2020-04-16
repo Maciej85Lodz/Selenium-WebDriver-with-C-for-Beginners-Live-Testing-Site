@@ -7,6 +7,7 @@ namespace AutoTestFramework
     public class LoginInvalidUsername
     {
         IAlert alert;
+        public IWebDriver Driver { get; set; }
 
         public LoginInvalidUsername()
         {     
@@ -15,17 +16,17 @@ namespace AutoTestFramework
         [OneTimeSetUp]
         public void Initialize()
         {
-            Actions.InitDriver();
-            NavigateTo.LoginFormScenarioThroughTestCases();
+            Driver = Actions.InitDriver();
+            NavigateTo.LoginFormScenarioThroughTestCases(Driver);
         }
 
         [TestCase]
         public void LessThan5Chars()
         {
-            NavigateTo.LoginFormScenarioThroughMenu();
-            Actions.FillLoginForm(Config.Credentials.Invalid.Username.FourCharacters, Config.Credentials.Valid.Password, Config.Credentials.Valid.Password);
+            NavigateTo.LoginFormScenarioThroughMenu(Driver);
+            Actions.FillLoginForm(Config.Credentials.Invalid.Username.FourCharacters, Config.Credentials.Valid.Password, Config.Credentials.Valid.Password,Driver);
 
-            alert = Driver.driver.SwitchTo().Alert();
+            alert = Driver.SwitchTo().Alert();
 
             Assert.AreEqual(Config.AlertsMessages.UsernameLengthOutOfRange, alert.Text);
             alert.Accept();            
@@ -35,9 +36,9 @@ namespace AutoTestFramework
         public void MoreThan12Chars()
         {
             Actions.FillLoginForm(Config.Credentials.Invalid.Username.ThirteenCharacters,
-                Config.Credentials.Valid.Password, Config.Credentials.Valid.Password);
+                Config.Credentials.Valid.Password, Config.Credentials.Valid.Password, Driver);
 
-            alert = Driver.driver.SwitchTo().Alert();
+            alert = Driver.SwitchTo().Alert();
 
             Assert.AreEqual(Config.AlertsMessages.UsernameLengthOutOfRange, alert.Text);
             alert.Accept();
@@ -46,7 +47,7 @@ namespace AutoTestFramework
         [OneTimeTearDown]
         public void CleanUp()
         {
-            Driver.driver.Quit();
+            Driver.Quit();
         }
     }
 }

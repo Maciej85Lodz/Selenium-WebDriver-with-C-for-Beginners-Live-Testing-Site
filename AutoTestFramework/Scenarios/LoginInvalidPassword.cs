@@ -2,11 +2,13 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace AutoTestFramework
+namespace AutoTestFramework.Scenarios
 {
+    [Parallelizable(ParallelScope.None)]
     public class LoginInvalidPassword
     {
         IAlert alert;
+        public IWebDriver Driver { get; set; }
 
         public LoginInvalidPassword()
         {
@@ -15,8 +17,8 @@ namespace AutoTestFramework
         [OneTimeSetUp]
         public void Initialize()
         {
-            Actions.InitDriver();
-            NavigateTo.LoginFormScenarioThroughTestCases();
+            Driver = Actions.InitDriver();
+            NavigateTo.LoginFormScenarioThroughTestCases(Driver);
         }
 
         [Test]
@@ -25,10 +27,10 @@ namespace AutoTestFramework
             Thread.Sleep(1000);
             Actions.FillLoginForm(Config.Credentials.Valid.Username,
                 Config.Credentials.Invalid.Password.FourCharacters, 
-                Config.Credentials.Invalid.Password.FourCharacters);
+                Config.Credentials.Invalid.Password.FourCharacters, Driver);
             Thread.Sleep(1000);
 
-            alert = Driver.driver.SwitchTo().Alert();
+            alert = Driver.SwitchTo().Alert();
             Thread.Sleep(5000);
             Assert.AreEqual(Config.AlertsMessages.PasswordLenghtOutOfRange, alert.Text);
             alert.Accept();
@@ -39,9 +41,9 @@ namespace AutoTestFramework
         public void MoreThan12Chars()
         {
             Actions.FillLoginForm(Config.Credentials.Valid.Username,
-                Config.Credentials.Invalid.Password.ThirteenCharacters, Config.Credentials.Invalid.Password.ThirteenCharacters);
+                Config.Credentials.Invalid.Password.ThirteenCharacters, Config.Credentials.Invalid.Password.ThirteenCharacters, Driver);
 
-            alert = Driver.driver.SwitchTo().Alert();
+            alert = Driver.SwitchTo().Alert();
             Thread.Sleep(5000);
             Assert.AreEqual(Config.AlertsMessages.PasswordLenghtOutOfRange, alert.Text);
             alert.Accept();
@@ -50,8 +52,8 @@ namespace AutoTestFramework
         [OneTimeTearDown]
         public void CleanUp()
         {
-            Driver.driver.Quit();
-            Driver.driver.Close();
+            Driver.Quit();
+            Driver.Close();
         }
     }
 }
