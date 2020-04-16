@@ -67,7 +67,6 @@
   <ItemGroup>
     <Compile Include="Actions.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Driver.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="NavigateTo.cs" />
     <Compile Include="Scenarios\LoginInvalidPassword.cs" />

@@ -9,7 +9,7 @@ namespace AutoTestFramework
     class EntryPoint
     {
         IAlert alert;
-
+        public IWebDriver Driver { get; set; }
         public static void Main()
         {
         }
@@ -17,16 +17,17 @@ namespace AutoTestFramework
         [SetUp]
         public void Initialize()
         {
-            Actions.InitDriver();
+            Driver = Actions.InitDriver();
         }
 
         [Test]
         public void ValidLogin()
         {
-            NavigateTo.LoginFormScenarioThroughMenu();
-            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepearPassword);
+            NavigateTo.LoginFormScenarioThroughMenu(Driver);
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, 
+                Config.Credentials.Valid.RepearPassword, Driver);
             
-            alert = Driver.driver.SwitchTo().Alert();
+            alert = Driver.SwitchTo().Alert();
 
             Assert.AreEqual(Config.AlertsMessages.SuccessfulLogin,alert.Text);
         }
@@ -34,7 +35,8 @@ namespace AutoTestFramework
         [TearDown]
         public void CleanUp()
         {
-            Driver.driver.Quit();
+            Driver.Quit();
+            Driver.Quit();
         }
     }
 }

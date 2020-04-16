@@ -4,8 +4,8 @@ namespace AutoTestFramework
 {
     public static class Config
     {
-        public static string BaseUrl = "http://testing.todvachev.com";
-        public static int ElementsWaitingTimeout = 5;
+        public const string BaseUrl = "http://testing.todvachev.com";
+        //public static int ElementsWaitingTimeout = 5;
 
         public static class Credentials
         {
